@@ -1,6 +1,8 @@
 # foreign_connect
 
-A new Flutter project.
+Foreign Connect is designed to 
+PLAN, PERSONALIZE, CONNECT, and DISCOVER 
+by providing an up-to-date resource tailored for foreigners relocating. Its user-friendly interface ensures a seamless and personalized integration into new cultures.
 
 ## Getting Started
 
