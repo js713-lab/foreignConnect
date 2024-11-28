@@ -1,0 +1,284 @@
+name: foreign_connect
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+  permission_handler: ^11.0.1
+  url_launcher: ^6.1.14
+  google_maps_flutter_ios: ^2.13.1
+  provider: ^6.0.5
+  google_sign_in: ^6.0.2
+  intl: ^0.19.0
+  local_auth: ^2.1.8
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+  socket_io_client: ^3.0.2
+  emoji_picker_flutter: ^3.1.0
+  vector_math: ^2.1.4
+  image_picker: ^1.1.2
+  path_provider: ^2.0.13
+  json_annotation: ^4.9.0
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  firebase_auth_web: ^5.8.13
+  firebase_core_web: ^2.10.0
+  cloud_firestore: ^5.5.0
+  file_picker: ^8.1.4
+  google_maps_flutter: ^2.5.0
+  flutter_secure_storage: ^9.0.0
+  js: ^0.6.7
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.3
+  build_runner: ^2.4.13
+  json_serializable: ^6.9.0
+
+flutter_icons:
+  image_path: "assets/icon/icon.png" 
+  android: true
+  ios: true
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icon/icon.png" 
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/logo.png
+    - assets/logo.png
+    - assets/milano_park.jpg
+    - assets/milano_mountains.jpg
+    - assets/images/marina_cafe.jpg
+    - assets/images/marina_park_cafe.jpg
+    - assets/cafe1.jpg
+    - assets/cafe2.jpg
+    - assets/cafe3.jpg
+    - assets/mbs.jpg
+    - assets/social_gathering.jpg
+    - assets/job_searching.jpg
+    - assets/housing_searches.jpg
+    - assets/languages.jpg
+    - assets/volunteer.jpg
+    - assets/parent_child.jpg
+    - assets/images/events/germany.jpg
+    - assets/images/events/newyork.jpg
+    - assets/system.jpg
+    - assets/colosseum.jpg
+    - assets/santorini.jpg
+    - assets/images/singapore_1.jpg
+    - assets/images/singapore_2.jpg
+    - assets/images/singapore_3.jpg
+    - assets/images/consultants/consultant_1.jpg
+    - assets/images/consultants/consultant_2.jpg
+    - assets/images/consultants/consultant_3.jpg
+    - assets/visa_logo.png
+    - assets/gif/avatar.gif
+    - assets/images/marina_park.jpg
+    - assets/images/marina_mountains.jpg
+    - assets/wiki/singapore.jpg
+    - assets/wiki/malaysia.jpg
+    - assets/wiki/china.jpg
+    - assets/wiki/america.jpg
+    - assets/wiki/taiwan.jpg
+    - assets/wiki/hongkong.jpg
+    - assets/wiki/korea.jpg
+    - assets/wiki/england.jpg
+    - assets/cultural_exchange.jpg
+    - assets/movie_nights.jpg
+    - assets/themed_parties.jpg
+    - assets/sports_events.jpg
+    - assets/workshops.jpg
+    - assets/job_listings.jpg
+    - assets/career_mentorship.jpg
+    - assets/resume_prep.jpg
+    - assets/apple_wallet.png
+    - assets/mastercard_logo.png
+    - assets/amex_logo.png
+    - assets/discover_logo.png
+    - assets/networking.jpg
+    - assets/visa_support.jpg
+    - assets/property_listings.jpg
+    - assets/roommate_matching.jpg
+    - assets/rental_guidance.jpg
+    - assets/area_guides.jpg
+    - assets/moving_assistance.jpg
+    - assets/language_exchange.jpg
+    - assets/conversation_groups.jpg
+    - assets/study_groups.jpg
+    - assets/cultural_workshops.jpg
+    - assets/translation_support.jpg
+    - assets/community_service.jpg
+    - assets/environmental_projects.jpg
+    - assets/education_support.jpg
+    - assets/elderly_care.jpg
+    - assets/crisis_response.jpg
+    - assets/playgroups.jpg
+    - assets/educational_activities.jpg
+    - assets/family_outings.jpg
+    - assets/creative_workshops.jpg
+    - assets/sports_recreation.jpg
+    - assets/images/map_fallback.png
+    - assets/images/guide.jpg
+    - assets/images/singapore.jpg
+    - assets/images/map_placeholder.jpg
+    - assets/gardens.jpg
+    - assets/mbs.jpg
+    - assets/clarke_quay.jpg
+    - assets/spectra.jpg
+    - assets/wiki/singapore_food.jpg
+    - assets/wiki/japan_sakura.jpg
+    - assets/wiki/korea_transport.jpg
+    - assets/wiki/malaysia_market.jpg
+  # Singapore Assets
+    - assets/wiki/sg_food1.jpg
+    - assets/wiki/sg_food2.jpg
+    - assets/wiki/sg_hawker1.jpg
+    - assets/wiki/sg_hawker2.jpg
+    - assets/wiki/sg_mrt.jpg
+    - assets/wiki/sg_bus.jpg
+    - assets/wiki/sg_shopping1.jpg
+    - assets/wiki/sg_shopping2.jpg
+    - assets/wiki/sg_festival1.jpg
+    - assets/wiki/sg_festival2.jpg
+    - assets/wiki/sg_traffic.jpg
+    # Malaysia Assets
+    - assets/wiki/my_food1.jpg
+    - assets/wiki/my_food2.jpg
+    - assets/wiki/my_mamak1.jpg
+    - assets/wiki/my_mamak2.jpg
+    - assets/wiki/my_kl1.jpg
+    - assets/wiki/my_kl2.jpg
+    - assets/wiki/my_festival1.jpg
+    - assets/wiki/my_festival2.jpg
+    - assets/wiki/my_traffic.jpg
+    # China Assets
+    - assets/wiki/cn_food1.jpg
+    - assets/wiki/cn_food2.jpg
+    - assets/wiki/cn_city1.jpg
+    - assets/wiki/cn_city2.jpg
+    - assets/wiki/cn_culture1.jpg
+    - assets/wiki/cn_culture2.jpg
+    - assets/wiki/cn_traffic.jpg
+    # America Assets
+    - assets/wiki/us_food1.jpg
+    - assets/wiki/us_food2.jpg
+    - assets/wiki/us_life1.jpg
+    - assets/wiki/us_life2.jpg
+    - assets/wiki/us_holiday1.jpg
+    - assets/wiki/us_holiday2.jpg
+    - assets/wiki/us_traffic.jpg
+    # Taiwan Assets
+    - assets/wiki/tw_food1.jpg
+    - assets/wiki/tw_food2.jpg
+    - assets/wiki/tw_life1.jpg
+    - assets/wiki/tw_life2.jpg
+    - assets/wiki/tw_culture1.jpg
+    - assets/wiki/tw_culture2.jpg
+    - assets/wiki/tw_traffic.jpg
+    # Hong Kong Assets
+    - assets/wiki/hk_food1.jpg
+    - assets/wiki/hk_food2.jpg
+    - assets/wiki/hk_life1.jpg
+    - assets/wiki/hk_life2.jpg
+    - assets/wiki/hk_culture1.jpg
+    - assets/wiki/hk_culture2.jpg
+    - assets/wiki/hk_traffic.jpg
+    # Korea Assets
+    - assets/wiki/kr_food1.jpg
+    - assets/wiki/kr_food2.jpg
+    - assets/wiki/kr_life1.jpg
+    - assets/wiki/kr_life2.jpg
+    - assets/wiki/kr_culture1.jpg
+    - assets/wiki/kr_culture2.jpg
+    - assets/wiki/kr_traffic.jpg
+    # England Assets
+    - assets/wiki/uk_food1.jpg
+    - assets/wiki/uk_food2.jpg
+    - assets/wiki/uk_life1.jpg
+    - assets/wiki/uk_life2.jpg
+    - assets/wiki/uk_culture1.jpg
+    - assets/wiki/uk_culture2.jpg
+    - assets/wiki/uk_traffic.jpg
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  fonts:
+    # - family: Schyler
+    #   fonts:
+    #     - asset: fonts/Schyler-Regular.ttf
+    #     - asset: fonts/Schyler-Italic.ttf
+    #       style: italic
+    # - family: Trajan Pro
+    #   fonts:
+    #     - asset: fonts/TrajanPro.ttf
+    #     - asset: fonts/TrajanPro_Bold.ttf
+    #       weight: 700
+    - family: Plus Jakarta Sans
+      fonts:
+        - asset: fonts/PlusJakartaSans-Regular.ttf
+        - asset: fonts/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: fonts/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: fonts/PlusJakartaSans-Bold.ttf
+          weight: 700
